@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Luis Eduardo | UFPS</title>
+    <style>
+        :root {
+            --primary: #aa1916; /* Rojo Institucional UFPS */
+            --secondary: #2d2d2d;
+            --bg: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            /* Imagen que representa la entrada/campus de la UFPS */
+            background: linear-gradient(rgba(170, 25, 22, 0.8), rgba(0, 0, 0, 0.7)), 
+                        url('https://ww2.ufps.edu.co/public/archivos/elementos_visuales/9079f2913e2d63301a0a5789a690e87b.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -60px auto 40px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+
+        .data-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        .data-table th, .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table th { background-color: #f9f9f9; color: var(--secondary); width: 35%; }
+
+        .video-wrapper {
+            margin-top: 25px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .signature { font-size: 1.3rem; font-weight: bold; color: #ff9999; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luis Eduardo</h1>
+        <p>Estudiante de Ingeniería de Sistemas</p>
+        <p>Universidad Francisco de Paula Santander</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Ficha de Perfil</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Nombre:</th>
+                    <td>Luis Eduardo</td>
+                </tr>
+                <tr>
+                    <th>Estatura:</th>
+                    <td>1.75 m</td>
+                </tr>
+                <tr>
+                    <th>Pasatiempos:</th>
+                    <td>Ajedrez y Optimización de Hardware</td>
+                </tr>
+                <tr>
+                    <th>Proyecto:</th>
+                    <td>Análisis de Inversión Inmobiliaria</td>
+                </tr>
+            </table>
+            <p style="text-align: center;">
+                <a href="https://lebelenoh-tech.github.io/algo/" style="color: var(--primary); font-weight: bold;">Ver mi otro repositorio</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Referente de Análisis</h2>
+            <div class="video-wrapper">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/5X3yyda2S6c" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Facultad de Ingeniería - UFPS 2026</p>
+        <p class="signature">Pagina creada por Luis Eduardo</p>
+    </footer>
+
+</body>
+</html>

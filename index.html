@@ -3,61 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Profesional - Luis Eduardo</title>
+    <title>Perfil Académico - Luis Eduardo | UFPS Ocaña</title>
     <style>
         :root {
-            --ufps-red: #aa1916;
-            --dark: #2d2d2d;
-            --white: #ffffff;
+            --primary: #aa1916; /* Rojo Institucional UFPS */
+            --secondary: #2c3e50;
+            --text-dark: #333333;
+            --text-light: #ffffff;
+            --bg-gray: #f4f7f6;
         }
 
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-gray);
             margin: 0;
-            background-color: #f4f4f4;
+            color: var(--text-dark);
+            line-height: 1.6;
         }
 
         header {
-            /* Aquí se añade la foto que enviaste como fondo del encabezado */
-            background: linear-gradient(rgba(170, 25, 22, 0.7), rgba(0, 0, 0, 0.6)), 
-                        url('https://ww2.ufps.edu.co/public/archivos/elementos_visuales/9079f2913e2d63301a0a5789a690e87b.jpg');
+            /* INTEGRACIÓN DE LA NUEVA IMAGEN DE PORTADA (RENDER UFPS) */
+            background: linear-gradient(rgba(170, 25, 22, 0.8), rgba(0, 0, 0, 0.7)), 
+                        url('https://th.bing.com/th/id/OIG1.0f7c231713294c65a782759e984956a1?pid=ImgGn');
             background-size: cover;
             background-position: center;
-            color: var(--white);
-            padding: 100px 20px;
+            color: var(--text-light);
+            padding: 120px 20px;
             text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            border-bottom: 5px solid #881210;
         }
 
-        .container {
-            max-width: 800px;
-            margin: -50px auto 50px;
-            background: var(--white);
+        header h1 { font-size: 3rem; margin: 0 0 10px; text-transform: uppercase; letter-spacing: 2px; }
+        header p { font-size: 1.3rem; margin: 0; opacity: 0.9; font-weight: 300; }
+
+        .main-container {
+            max-width: 900px;
+            margin: -60px auto 50px;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--text-light);
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
-        h2 { color: var(--ufps-red); border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
 
-        .perfil-table {
+        .info-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            font-size: 1.1rem;
         }
 
-        .perfil-table th, .perfil-table td {
-            padding: 15px;
+        .info-table th, .info-table td {
+            padding: 18px;
             text-align: left;
             border-bottom: 1px solid #eee;
         }
 
-        .perfil-table th { background-color: #f9f9f9; width: 35%; }
+        .info-table th {
+            background-color: #fcfcfc;
+            color: var(--secondary);
+            width: 35%;
+            font-weight: 600;
+        }
+
+        .info-table td { color: #555; }
+
+        /* Estilo para etiquetas dentro de la tabla */
+        .tag {
+            display: inline-block;
+            background-color: #e1f5fe;
+            color: #0277bd;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
 
         footer {
-            background: var(--dark);
-            color: white;
+            background-color: var(--secondary);
+            color: var(--text-light);
             text-align: center;
-            padding: 30px;
+            padding: 40px 20px;
+            margin-top: auto;
+        }
+
+        .firma {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffcccc;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -66,30 +114,68 @@
     <header>
         <h1>LUIS EDUARDO</h1>
         <p>Ingeniería de Sistemas - UFPS Ocaña</p>
+        <p>Innovación • Tecnología • Estrategia</p>
     </header>
 
-    <div class="container">
+    <div class="main-container">
+        
         <section>
-            <h2>Información Personal</h2>
-            <table class="perfil-table">
-                <tr>
-                    <th>Nombre:</th>
-                    <td>Luis Eduardo</td>
-                </tr>
-                <tr>
-                    <th>Estatura:</th>
-                    <td>1.75 m</td>
-                </tr>
-                <tr>
-                    <th>Pasatiempo:</th>
-                    <td>Ajedrez y Optimización de Hardware</td>
-                </tr>
+            <h2>Ficha de Perfil Académico y Personal</h2>
+            <table class="info-table">
+                <tbody>
+                    <tr>
+                        <th>Nombre Completo:</th>
+                        <td>Luis Eduardo</td>
+                    </tr>
+                    <tr>
+                        <th>Código de Estudiante:</th>
+                        <td><em>[Tu Código UFPS aquí, ej: 1621234]</em></td>
+                    </tr>
+                    <tr>
+                        <th>Correo Institucional:</th>
+                        <td><em>[Tu Correo UFPS aquí, ej: luiseduardo@ufps.edu.co]</em></td>
+                    </tr>
+                    <tr>
+                        <th>Semestre Actual:</th>
+                        <td>I Semestre (Plan de Estudios Ing. Sistemas)</td>
+                    </tr>
+                    <tr>
+                        <th>Estatura:</th>
+                        <td>1.75 m</td>
+                    </tr>
+                    <tr>
+                        <th>Pasatiempos Técnicos:</th>
+                        <td>Ajedrez, Optimización de Hardware (PC Modding)</td>
+                    </tr>
+                    <tr>
+                        <th>Áreas de Interés Técnico:</th>
+                        <td>
+                            <span class="tag">Desarrollo Web</span>
+                            <span class="tag">Git & Control de Versiones</span>
+                            <span class="tag">Seguridad Informática</span>
+                            <span class="tag">Estrategia Digital</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Ubicación Académica:</th>
+                        <td>Facultad de Ingeniería - UFPS Ocaña, Colombia</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
+
+        <section>
+            <h2>Sobre mi Enfoque</h2>
+            <p>
+                Como estudiante de Ingeniería de Sistemas en la <strong>Universidad Francisco de Paula Santander</strong>, me dedico a explorar la convergencia entre el desarrollo de software de vanguardia y la implementación de soluciones tecnológicas escalables. Mi enfoque está en la optimización de procesos mediante herramientas modernas como Git y HTML5, combinando la lógica del ajedrez con la precisión de la ingeniería para crear impacto en el entorno digital.
+            </p>
+        </section>
+
     </div>
 
     <footer>
-        <p>Pagina creada por Luis Eduardo</p>
+        <p>Facultad de Ingeniería - Universidad Francisco de Paula Santander, Ocaña</p>
+        <p class="firma">Pagina creada por Luis Eduardo</p>
     </footer>
 
 </body>

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Académico - Luis Eduardo | UFPS Ocaña</title>
     <style>
+        /* Variables de color para un estilo neutro y profesional */
         :root {
             --primary-red: #aa1916;
-            --neutral-bg: #e9ecef; /* Gris neutro suave */
-            --dark-slate: #343a40; /* Gris oscuro para textos y footer */
+            --neutral-bg: #f2f4f6; /* Fondo gris neutro claro */
+            --dark-slate: #2d3436; /* Gris oscuro profesional */
             --white: #ffffff;
-            --border-color: #dee2e6;
+            --border-color: #dcdde1;
         }
 
         body {
@@ -22,27 +23,27 @@
         }
 
         header {
-            /* Imagen oficial UFPS Ocaña con filtro profesional */
-            background: linear-gradient(rgba(52, 58, 64, 0.7), rgba(52, 58, 64, 0.8)), 
+            /* Imagen institucional de la UFPS Ocaña como fondo */
+            background: linear-gradient(rgba(45, 52, 54, 0.75), rgba(45, 52, 54, 0.85)), 
                         url('https://ww2.ufps.edu.co/public/archivos/elementos_visuales/9079f2913e2d63301a0a5789a690e87b.jpg');
             background-size: cover;
             background-position: center;
             color: var(--white);
-            padding: 100px 20px;
+            padding: 120px 20px;
             text-align: center;
-            border-bottom: 4px solid var(--primary-red);
+            border-bottom: 5px solid var(--primary-red);
         }
 
-        header h1 { font-size: 3rem; margin: 0; letter-spacing: 3px; }
-        header p { font-size: 1.2rem; margin-top: 10px; opacity: 0.9; font-weight: 300; }
+        header h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; font-weight: 700; }
+        header p { font-size: 1.3rem; margin-top: 10px; opacity: 0.9; font-weight: 300; }
 
         .container {
             max-width: 850px;
-            margin: -40px auto 40px;
+            margin: -50px auto 50px;
             background: var(--white);
-            padding: 45px;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
         h2 { 
@@ -50,12 +51,12 @@
             border-bottom: 2px solid var(--primary-red); 
             padding-bottom: 10px;
             margin-bottom: 30px;
-            font-weight: 600;
         }
 
         .info-table {
             width: 100%;
             border-collapse: collapse;
+            font-size: 1.1rem;
         }
 
         .info-table th, .info-table td {
@@ -66,33 +67,32 @@
 
         .info-table th { 
             background-color: #f8f9fa; 
-            color: #495057; 
+            color: #636e72; 
             width: 35%; 
-            font-size: 0.95rem;
-            text-transform: uppercase;
+            font-weight: 600;
         }
 
         .tag {
             display: inline-block;
-            background: #f1f3f5;
+            background: #dfe6e9;
             color: var(--dark-slate);
             padding: 4px 12px;
             border-radius: 4px;
             font-size: 0.85rem;
-            border: 1px solid var(--border-color);
             margin-right: 5px;
+            font-weight: bold;
         }
 
         footer {
             background-color: var(--dark-slate);
             color: var(--white);
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         .firma { 
-            font-size: 1.2rem; 
-            color: #adb5bd; 
+            font-size: 1.3rem; 
+            color: #b2bec3; 
             margin-top: 15px;
             display: block;
             font-weight: bold;
@@ -108,7 +108,7 @@
 
     <div class="container">
         <section>
-            <h2>Perfil Profesional</h2>
+            <h2>Información General</h2>
             <table class="info-table">
                 <tbody>
                     <tr>
@@ -120,23 +120,23 @@
                         <td>1.75 m</td>
                     </tr>
                     <tr>
-                        <th>Intereses Académicos</th>
-                        <td>Ajedrez, Optimización de Hardware y Sistemas Operativos</td>
+                        <th>Hobby Principal</th>
+                        <td>Ajedrez y Optimización de Hardware</td>
                     </tr>
                     <tr>
                         <th>Institución</th>
                         <td>Universidad Francisco de Paula Santander</td>
                     </tr>
                     <tr>
-                        <th>Sede</th>
+                        <th>Ubicación</th>
                         <td>Ocaña, Norte de Santander</td>
                     </tr>
                     <tr>
-                        <th>Tecnologías</th>
+                        <th>Habilidades</th>
                         <td>
                             <span class="tag">HTML5</span>
-                            <span class="tag">Git</span>
-                            <span class="tag">Java Logic</span>
+                            <span class="tag">Git & GitHub</span>
+                            <span class="tag">Lógica Java</span>
                         </td>
                     </tr>
                 </tbody>

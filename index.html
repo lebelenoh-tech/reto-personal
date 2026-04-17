@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Académico - Luis Eduardo | UFPS Ocaña</title>
     <style>
-        /* Variables de color para un estilo neutro y profesional */
         :root {
             --primary-red: #aa1916;
-            --neutral-bg: #f2f4f6; /* Fondo gris neutro claro */
-            --dark-slate: #2d3436; /* Gris oscuro profesional */
+            --neutral-bg: #f2f4f6; /* Fondo neutro profesional */
+            --dark-slate: #2d3436;
             --white: #ffffff;
-            --border-color: #dcdde1;
+            --border: #dcdde1;
         }
 
         body {
@@ -23,59 +22,67 @@
         }
 
         header {
-            /* Imagen institucional de la UFPS Ocaña como fondo */
-            background: linear-gradient(rgba(45, 52, 54, 0.75), rgba(45, 52, 54, 0.85)), 
-                        url('https://ww2.ufps.edu.co/public/archivos/elementos_visuales/9079f2913e2d63301a0a5789a690e87b.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: var(--dark-slate);
             color: var(--white);
-            padding: 120px 20px;
+            padding: 60px 20px;
             text-align: center;
             border-bottom: 5px solid var(--primary-red);
         }
 
-        header h1 { font-size: 3rem; margin: 0; letter-spacing: 2px; font-weight: 700; }
-        header p { font-size: 1.3rem; margin-top: 10px; opacity: 0.9; font-weight: 300; }
+        header h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; }
+        header p { font-size: 1.1rem; margin-top: 10px; opacity: 0.8; }
 
         .container {
             max-width: 850px;
-            margin: -50px auto 50px;
+            margin: 40px auto;
             background: var(--white);
-            padding: 40px;
+            padding: 0; /* Quitamos padding para que la imagen llegue al borde */
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden; /* Mantiene las esquinas redondeadas con la imagen */
+        }
+
+        /* ESTILO DE LA IMAGEN DE LA UNIVERSIDAD */
+        .university-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover; /* Ajusta la imagen sin deformarla */
+            display: block;
+        }
+
+        .content {
+            padding: 40px;
         }
 
         h2 { 
             color: var(--dark-slate); 
             border-bottom: 2px solid var(--primary-red); 
             padding-bottom: 10px;
-            margin-bottom: 30px;
+            margin-top: 0;
         }
 
         .info-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 1.1rem;
+            margin-top: 20px;
         }
 
         .info-table th, .info-table td {
             padding: 18px;
             text-align: left;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border);
         }
 
         .info-table th { 
             background-color: #f8f9fa; 
             color: #636e72; 
             width: 35%; 
-            font-weight: 600;
         }
 
         .tag {
             display: inline-block;
             background: #dfe6e9;
-            color: var(--dark-slate);
             padding: 4px 12px;
             border-radius: 4px;
             font-size: 0.85rem;
@@ -90,13 +97,7 @@
             padding: 40px 20px;
         }
 
-        .firma { 
-            font-size: 1.3rem; 
-            color: #b2bec3; 
-            margin-top: 15px;
-            display: block;
-            font-weight: bold;
-        }
+        .firma { font-size: 1.2rem; color: #b2bec3; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -107,41 +108,47 @@
     </header>
 
     <div class="container">
-        <section>
-            <h2>Información General</h2>
-            <table class="info-table">
-                <tbody>
-                    <tr>
-                        <th>Nombre Completo</th>
-                        <td>Luis Eduardo</td>
-                    </tr>
-                    <tr>
-                        <th>Estatura</th>
-                        <td>1.75 m</td>
-                    </tr>
-                    <tr>
-                        <th>Hobby Principal</th>
-                        <td>Ajedrez y Optimización de Hardware</td>
-                    </tr>
-                    <tr>
-                        <th>Institución</th>
-                        <td>Universidad Francisco de Paula Santander</td>
-                    </tr>
-                    <tr>
-                        <th>Ubicación</th>
-                        <td>Ocaña, Norte de Santander</td>
-                    </tr>
-                    <tr>
-                        <th>Habilidades</th>
-                        <td>
-                            <span class="tag">HTML5</span>
-                            <span class="tag">Git & GitHub</span>
-                            <span class="tag">Lógica Java</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <img src="https://ww2.ufps.edu.co/public/archivos/elementos_visuales/9079f2913e2d63301a0a5789a690e87b.jpg" 
+             alt="Entrada Universidad Francisco de Paula Santander Ocaña" 
+             class="university-image">
+
+        <div class="content">
+            <section>
+                <h2>Información Profesional</h2>
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <th>Nombre Completo</th>
+                            <td>Luis Eduardo</td>
+                        </tr>
+                        <tr>
+                            <th>Estatura</th>
+                            <td>1.75 m</td>
+                        </tr>
+                        <tr>
+                            <th>Hobby Principal</th>
+                            <td>Ajedrez y Optimización de Hardware</td>
+                        </tr>
+                        <tr>
+                            <th>Institución</th>
+                            <td>Universidad Francisco de Paula Santander</td>
+                        </tr>
+                        <tr>
+                            <th>Sede</th>
+                            <td>Ocaña, Norte de Santander</td>
+                        </tr>
+                        <tr>
+                            <th>Habilidades</th>
+                            <td>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">Git & GitHub</span>
+                                <span class="tag">Lógica Java</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </div>
 
     <footer>
